@@ -475,7 +475,7 @@ if page == "Option":
 
         if st.button("Download car data"):
             try:
-                voitures = pd.read_csv('/home/luc-lintos/Documents/Homework&Assignment/Data Collection/My_first_app/Data/voitures.csv')
+                voitures = pd.read_csv('Data/voitures.csv')
                 csv_voitures = voitures.to_csv(index=False).encode('utf-8')
                 st.download_button(
                     label="Click to download car CSV",
@@ -489,7 +489,7 @@ if page == "Option":
 
         if st.button("Download motorcycle data"):
             try:
-                motos_and_scooters = pd.read_csv('/home/luc-lintos/Documents/Homework&Assignment/Data Collection/My_first_app/Data/motos-and-scooters.csv')
+                motos_and_scooters = pd.read_csv('Data/motos-and-scooters.csv')
                 csv_moto = motos_and_scooters.to_csv(index=False).encode('utf-8')
                 st.download_button(
                     label="Click to download motorcycle CSV",
@@ -503,7 +503,7 @@ if page == "Option":
 
         if st.button("Download rental data"):
             try:
-                location_de_voitures = pd.read_csv('/home/luc-lintos/Documents/Homework&Assignment/Data Collection/My_first_app/Data/location-de-voitures.csv')
+                location_de_voitures = pd.read_csv('Data/location-de-voitures.csv')
                 csv_loc = location_de_voitures.to_csv(index=False).encode('utf-8')
                 st.download_button(
                     label="Click to download rental CSV",
